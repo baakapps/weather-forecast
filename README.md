@@ -27,9 +27,9 @@ Content-Type: application/json
 
 {
   "main": {
-    "feelsLike": null,
-    "tempMax": null,
-    "humidity": 58
+    "feelsLike": 282.86,
+    "tempMax": 286.03,
+    "humidity": 59
   }
 }
 ```
