@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler({OpenWeatherAPIException.class})
-    public ProblemDetail handleNotFoundErrors(OpenWeatherAPIException ex) {
+    public ProblemDetail handleOpenWeatherAPIErrors(OpenWeatherAPIException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.valueOf(ex.getErrorCode()));
         problemDetail.setTitle("API_ERROR");
         problemDetail.setDetail(ex.getMessage());
